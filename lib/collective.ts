@@ -46,10 +46,10 @@ export const members: Member[] = [
   {
     id: "2",
     name: "nofazechris",
-    role: "Chris Eguaoba · Developer",
-    heroLabel: "nofazechris · Developer",
+    role: "Chris Eguaoba · Co-founder & Developer",
+    heroLabel: "nofazechris · Co-founder",
     networkLabel: "NOFAZE",
-    bio: "I’m nofazechris — Chris Eguaoba — a developer who builds the products behind Web3 projects. I work across the full stack, from interfaces people enjoy using to the systems that keep them running, and I lean on AI and automation to remove the repetitive work so a small team can move like a bigger one. I care about the details that make a product feel alive — how it loads, how it responds, how it reads — and about turning rough ideas into something that ships and lasts. Alongside the code I think about product and data: what people actually use, and what the numbers say about it.",
+    bio: "I’m nofazechris — Chris Eguaoba — co-founder of Kliq and a developer who builds the products behind Web3 projects. I work across the full stack, from interfaces people enjoy using to the systems that keep them running, and I lean on AI and automation to remove the repetitive work so a small team can move like a bigger one. I care about the details that make a product feel alive — how it loads, how it responds, how it reads — and about turning rough ideas into something that ships and lasts. Alongside the code I think about product and data: what people actually use, and what the numbers say about it.",
     tags: [
       { skill: "ai", label: "AI Systems" },
       { skill: "software", label: "Full Stack" },
@@ -210,6 +210,9 @@ export type Project = {
   image?: string;
   link?: { href: string; label: string };
 };
+
+/** Total projects worked on. Only a few are showcased below, so this is not projects.length. */
+export const projectsWorkedOn = "20+";
 
 export const projects: Project[] = [
   {

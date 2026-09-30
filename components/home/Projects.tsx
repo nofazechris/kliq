@@ -11,9 +11,12 @@ export function Projects() {
   return (
     <section id="projects" className={styles.section}>
       <div className={styles.inner}>
-        <h2 data-reveal className={styles.h2} style={{ marginBottom: "clamp(32px, 5vw, 64px)" }}>
-          Things we&apos;ve built
-        </h2>
+        <div data-reveal className={styles.sectionHead}>
+          <h2 className={styles.h2}>Things we&apos;ve built</h2>
+          <div className={styles.caption} style={{ maxWidth: "30ch" }}>
+            Projects showcase
+          </div>
+        </div>
 
         {projects.map((p, i) => (
           <article key={p.id} data-reveal className={`${styles.project} ${i % 2 === 1 ? styles.projectFlip : ""}`}>

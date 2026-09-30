@@ -1,12 +1,12 @@
 import Image from "next/image";
-import { contact, disciplines, members, navLinks, projects, values } from "@/lib/collective";
+import { contact, disciplines, members, navLinks, projectsWorkedOn, values } from "@/lib/collective";
 import styles from "./home.module.css";
 
 export function About() {
   const stats = [
     { value: String(members.length).padStart(2, "0"), label: "Members" },
     { value: String(disciplines.length).padStart(2, "0"), label: "Disciplines" },
-    { value: String(projects.length).padStart(2, "0"), label: "Projects" },
+    { value: projectsWorkedOn, label: "Projects" },
     { value: "∞", label: "Ideas", accent: true },
   ];
   return (
